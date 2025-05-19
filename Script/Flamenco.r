@@ -5,6 +5,7 @@ flamenco_pesticides <- function(){
   library(sf)
   library(purrr)
   library(mapview)
+  library(ggplot2)
   f_get_pesti_station <- function(station){
     return(get_qualite_rivieres_analyse_pc(code_station=station,code_parametre=c('2077','1141','1288','1149',
                                                                                  '1480','1212','1765','2804',
